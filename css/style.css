@@ -1,0 +1,235 @@
+/* Navigation Bar */
+nav.navbar {
+  padding-bottom: 4.5rem;
+  background-color: #f56262;
+  background-image: url("../images/navbar-shape.png");
+}
+
+a.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+li.nav-item {
+  padding: 10px 18px;
+}
+
+a.nav-link {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Testimonials Section */
+section#testimonials {
+  text-align: center;
+  background-color: #eb4f4e;
+  color: #fff;
+}
+
+h2.testimonials-h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+div.carousel-item {
+  padding: 7% 15%;
+}
+
+/* Media Queries at the bottom */
+@media (max-width: 800px) {
+  nav.navbar {
+    background-image: none;
+  }
+  section#title {
+    text-align: center;
+  }
+
+  img.title-img {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+.map-responsive {
+  overflow: hidden;
+
+  position: relative;
+  height: 300px;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 300px;
+  width: 100%;
+  position: absolute;
+}
+
+.main-element {
+  position: absolute;
+  top: 80px;
+  left: 30%;
+  right: 30%;
+
+  background-color: #000000da;
+  padding: 10px;
+  z-index: +1;
+}
+
+/* carousel 
+.carousel {
+  margin: 50px auto;
+  padding: 0 70px;
+}*/
+.carousel .item {
+  color: #747d89;
+  min-height: 250px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.carousel .item .img-box {
+  height: 120px;
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+}
+.carousel .item img {
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.carousel .item h4 {
+  font-size: 18px;
+}
+.carousel .item h4,
+.carousel .item p,
+.carousel .item ul {
+  margin-bottom: 5px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  height: 44px;
+  width: 40px;
+  background: transparent;
+  margin: auto 0;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  margin: -80px 0 0 0;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  color: #6cc372;
+  text-shadow: none;
+  font-weight: bold;
+}
+.carousel-control-prev i {
+  margin-left: -2px;
+}
+.carousel-control-next i {
+  margin-right: -4px;
+}
+
+.carousel-indicators li,
+.carousel-indicators li.active {
+  width: 10px;
+  height: 10px;
+  margin: 4px;
+  border-radius: 50%;
+  border: none;
+}
+.carousel-indicators li {
+  background: #747d89;
+}
+.carousel-indicators li.active {
+  background: #6cc372;
+}
+
+/*Pricing */
+
+.single-table {
+  background: rgb(241, 241, 241);
+  margin-top: -150px;
+}
+
+.plan-header {
+  background: #fff;
+  color: #616161;
+  padding: 2px 0;
+}
+.plan-bottom {
+  background: #616161;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+  padding: 20px 0;
+}
+.single-table .plan-header h3 {
+  margin: 0;
+  padding: 20px 0 5px 0;
+  text-transform: uppercase;
+}
+.single-table .plan-price {
+  display: inline;
+
+  color: rgb(255, 255, 255);
+  padding: 10px 0;
+  margin: 0;
+  margin-left: 0px;
+  font-size: 50px;
+  font-weight: bold;
+}
+.single-table .plan-price span {
+  font-size: 18px;
+  font-weight: normal;
+}
+.single-table ul {
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+}
+.single-table ul li {
+  padding: 12px 0;
+  margin: 0 20px;
+  border-top: 1px solid #dae2ea;
+  font-size: 15px;
+}
+
+.order {
+  display: inline;
+  background-color: white;
+  color: #616161;
+  padding: 10px 25px 10px 25px;
+  border-radius: 4px;
+  margin-left: 120px;
+}
+
+@media (max-width: 500px) {
+  .single-table {
+    margin: 0px;
+    margin: 50px;
+  }
+  #item-carousel {
+    padding-bottom: 0;
+  }
+
+  #middle-price {
+    margin: 0px;
+    margin-top: 200px;
+    margin-bottom: -50px;
+  }
+}
